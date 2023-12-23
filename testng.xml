@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NetBanking">
+
+	<listeners>
+	<listener class-name = "com.netbanking.utilites.GenerateExtentReport"/>
+	</listeners>
+
+  <test name="Banking App Test">
+  		
+      <parameter name="browser" value="Chrome"/>
+
+      <classes>
+      <class name="com.netbanking.testCases.LoginTest_TC001"/>
+       <!--<class name="com.netbanking.testCases.LoginTest_TC002"/>-->
+      <!-- <class name="com.netbanking.testCases.AddCustomerTest_TC001"/>-->
+      <!-- <class name="com.netbanking.testCases.AddCustomerTest_TC002"/>-->
+       <!--<class name="com.netbanking.testCases.EditCustomerTest_TC001"/>-->
+       <class name="com.netbanking.testCases.NewAccountTest_TC001"/>
+      </classes>
+  </test> <!-- Test -->    
+</suite> <!-- Suite -->
